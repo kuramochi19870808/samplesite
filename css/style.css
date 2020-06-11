@@ -1,0 +1,406 @@
+/* ---------------------------------------- */
+/* common */
+/* ---------------------------------------- */
+.pc{
+  display: block;
+}
+.sp{
+  display: none;
+} 
+
+@media screen and (max-width:800px){
+}
+@media screen and (max-width:576px){
+  .pc{
+    display: none;
+  }
+  .sp{
+    display: block;
+  }
+}
+
+.bar{
+  margin-bottom: 20px;
+  font-size: 2rem;
+  font-family: aoyanagi;
+  background: #46650f;
+  background: linear-gradient(#6e942b, #556140);
+  border-bottom: 5px solid #cd2a0a;
+  padding: 10px 20px;
+  color: #fff;
+  letter-spacing: 0.1em;
+}
+
+/* ---------------------------------------- */
+/* font */
+/* ---------------------------------------- */
+@font-face {
+  font-family:aoyanagi;
+  src: url('../font/aoyanagi.ttf') format("truetype");
+  }
+
+/* ---------------------------------------- */
+/* body */
+/* ---------------------------------------- */
+body{
+  background-image: url("../img/bg01.jpg");
+  background-size: cover;
+}
+
+/* ---------------------------------------- */
+/* header */
+/* ---------------------------------------- */
+header{
+  padding: 5% 3%;
+}
+.header-container{
+}
+  .header-list{
+  }
+    .header-list ul{
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      background: rgba(255,255,255,0.6);
+      border-top: 1px solid #FFF;
+      border-bottom: 1px solid #FFF;
+    }
+    .header-list li{
+      width: 18%;
+      text-align: center;
+      margin:0;
+      font-size: 1.25rem;
+      list-style: none;
+      color: #000;
+      border-left: 1px solid #fff;
+      padding: 0px 0;
+    }
+    .header-list li:hover{
+      background-color: #FFF;
+      opacity: 0.9;
+      transition: 1s;
+    }
+    .header-list li h1{
+      font-weight: bold;
+      color: #46650f;
+    }
+    .header-list li h1:hover{
+    }
+    .header-list li:first-child{
+      width: 28%;
+      font-size: 2rem;
+      padding: 0px 0;
+    }
+    .header-list li:last-child{
+      border-right: 1px solid #fff;
+    }
+    .header-list h1{
+      color: #000;
+      font-family: aoyanagi;
+    }
+    .header-list li a{
+      color: #000;
+      display: block;
+      padding:20px 0;
+      font-family: aoyanagi;
+    }
+    .header-list li a:hover{
+      text-decoration: none;
+      cursor: pointer;
+    }
+    .header-list i{
+      margin-bottom: 5px;
+    }
+
+.navbar-h1{
+  font-weight: bold;
+  color: #FFF;
+  font-family: aoyanagi;
+  font-size:2rem;
+}
+/* ---------------------------------------- */
+/* slide */
+/* ---------------------------------------- */
+.slide{
+}
+
+.slide-container{
+}
+
+  .slide-window{
+    clear: left;
+    width: 100%;
+    height: 200px;
+    margin: 0 auto 40px;
+    position: relative;
+    border: 5px solid #FFF;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+    box-sizing: border-box;
+  }
+
+
+/* ---------------------------------------- */
+/* main */
+/* ---------------------------------------- */
+.main{
+  color: #fff;
+}
+
+.main-container{
+  display: flex;
+  justify-content: space-between;
+  overflow: hidden;
+  box-sizing: border-box;
+  background: rgba(0,0,0,.8);
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+  margin: 0 3%;
+}
+/* ---------------------------------------- */
+/* sidebar */
+/* ---------------------------------------- */
+.sidebar{
+  width: 25%;
+  padding: 20px 0 0 10px;
+  color: #fff;
+}
+
+  .sidebar-01,
+  .sidebar-02{
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #444;
+    background: #222;
+  }
+    .sidebar-01 h2,
+    .sidebar-02 h2{
+      text-align: center;
+      padding: 10px;
+      border: 1px solid #444;
+      background: #000;
+      background: linear-gradient(#222, #000);
+    }
+    .sidebar-01 ul{
+      list-style: none;
+    }
+    .sidebar-01 li{
+      text-align:left;
+      padding: 10px;
+      border: 1px solid #444;
+      background: #000;	
+      background: linear-gradient(#222, #000);	
+    }
+    .sidebar-01 a{
+      display: block;
+      color: #FFF;
+      font-size: 0.9rem;
+    }
+    .sidebar-01 a:hover{
+      color: rgb(225, 181, 25);
+      text-decoration: none;
+    }
+  .sidebar-02{
+  }
+    .sidebar-02 p{
+      font-size: 0.9rem;
+      padding: 10px 0 0 0;
+    }
+    .sidebar-02{
+    }
+
+/* ---------------------------------------- */
+/* contents */
+/* ---------------------------------------- */
+.contents{
+  width: 73%;
+  padding: 20px 10px 0 0;
+}
+@media screen and (max-width:576px){
+  .contents{
+    width: 90%;
+    padding: 20px 10px 0 0;
+    margin: auto;
+  }
+}
+/* ---------------------------------------- */    
+/* about */
+/* ---------------------------------------- */
+.about{
+  padding: 0 0 10% 0;
+}
+.about h2{
+  padding:0 20px;
+}
+.about p{
+  padding:0 20px;
+}
+/* ---------------------------------------- */    
+/* menu */
+/* ---------------------------------------- */
+.menu{
+  padding: 0 0 10% 0;
+}
+
+.button{
+}
+.button-container{
+  padding: 2% 0 6% 0;
+  display: flex;
+}
+
+  .button button{
+    width: 100px;
+    font-size:1em;
+    margin:0 10px;
+    display:block;
+    background-color:#46650f ;
+    color:#E9ECEB;
+    padding:10px 25px;
+    border-radius:20px;
+    border:1px solid #FFF;
+    cursor:pointer;
+  }
+  .button button:hover{
+    background-color:#46650f ;
+    opacity: 0.7;
+    color:#E9ECEB;
+  }
+
+  .item{
+    padding: 10px;
+  }
+  .item p{
+    width:100%;
+    background-color:rgba(0,0,0,0.5);
+    color:white;
+    position:absolute;
+    line-height: 2;
+    bottom:0px;
+    transform: translate(0%,0%);
+    display:none;
+  }
+  .item-image{
+    overflow: hidden;
+    position: relative;
+ 
+  }
+  .item-image img{
+    width: 100%;
+    transition-duration: 1s;
+  }
+  .item-image img:hover{
+    transform: scale(1.2,1.2);	/*画像の拡大率*/
+    transition-duration: 1s;	/*変化に掛かる時間*/
+  }
+  @media screen and (max-width:576px){
+    .button-container{
+      padding: 2% 0 6% 0;
+      display: block;
+      text-align: center;
+    }
+    .button button{
+      width: 40%;
+      font-size:1em;
+      margin:10px;
+      display:inline-block;
+      background-color:#46650f ;
+      color:#E9ECEB;
+      padding:10px 25px;
+      border-radius:20px;
+      border:1px solid #FFF;
+      cursor:pointer;
+    }
+  }
+/* ---------------------------------------- */
+/* access */
+/* ---------------------------------------- */
+.access{
+  padding: 0 0 10% 0;
+}
+
+ .access table{
+   width: 100%;
+ }
+
+ .access table th{
+  width: 120px;  
+  vertical-align:middle;
+  text-align: left;
+  font-weight: normal;
+  border: 1px solid #555;
+  padding: 10px;
+ }
+ .access table td{
+  font-weight: normal;
+  border: 1px solid #555;
+  padding: 10px 15px;
+ }
+
+ .ggmap {
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 30px;
+  height: 0;
+  overflow: hidden;
+  }
+   
+  .ggmap iframe,
+  .ggmap object,
+  .ggmap embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  }
+
+/* ---------------------------------------- */  
+/* contact */
+/* ---------------------------------------- */
+.contact{
+}
+
+
+
+
+/* ---------------------------------------- */
+/* footer */
+/* ---------------------------------------- */
+footer {
+	clear: both;
+	color: #000;	/*文字色*/
+	padding: 10px 0;
+	text-align: center;
+}
+/*リンクテキスト*/
+footer a {
+	text-decoration: none;
+	color: #fff;
+}
+footer .pr {display: block;}  
+ 
+.pagetop {
+      display: none;
+      position: fixed;
+      bottom: 30px;
+      right: 15px;
+  }
+  .pagetop a {
+      display: block;
+      background-color: #ccc;
+      text-align: center;
+      color: #222;
+      font-size: 3rem;
+      text-decoration: none;
+      padding: 5px 10px;
+      border-radius: 50%;
+      filter:alpha(opacity=80);
+      -moz-opacity: 0.5;
+      opacity: 0.8;
+  }
+  .pagetop a:hover {
+      background-color: #ccc;
+      color: #222;
+      text-decoration: none;
+      -moz-opacity: 0.5;
+      opacity: 1;
+  }
